@@ -1,0 +1,55 @@
+{
+  "name": "sails-webpack-seed",
+  "private": true,
+  "version": "0.0.0",
+  "description": "a Sails application",
+  "keywords": [],
+  "dependencies": {
+    "async": "2.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "lodash": "3.10.1",
+    "node-sass": "^4.11.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "sails": "^1.1.0",
+    "sails-hook-orm": "^2.1.1",
+    "sails-hook-sockets": "^1.5.5",
+    "sass-loader": "^7.1.0",
+    "webpack": "4.28.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "@sailshq/eslint": "^4.19.3",
+    "babel-loader": "^8.0.5",
+    "clean-webpack-plugin": "^1.0.0",
+    "copy-webpack-plugin": "^4.6.0",
+    "css-loader": "^2.1.0",
+    "ejs-loader": "^0.3.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "sails.io.js": "^1.2.1",
+    "sass-loader": "^7.1.0",
+    "socket.io-client": "^2.2.0",
+    "style-loader": "^0.23.1"
+  },
+  "scripts": {
+    "start": "NODE_ENV=production node app.js",
+    "test": "echo && echo \"* * * * * * * * * * * * * * * * * * * * * * * * * * * \" && echo \"About to run tests...\" && echo && if ! node ./node_modules/mocha/bin/mocha --timeout 10000 ; then echo && echo && echo \"- - -\" && echo \"Looks like something went wrong.\" && echo \"|  If you are not sure what to do next, try:\" && echo \"|  npm install mocha --save-dev\" && echo \"|  \" && echo \"|  And then:\" && echo \"|  mkdir test/\" && echo ; fi",
+    "debug": "node debug app.js"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/scottmac/sails-webpack-seed.git"
+  },
+  "author": "scottmac",
+  "license": ""
+}
